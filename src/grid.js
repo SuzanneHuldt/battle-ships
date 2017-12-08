@@ -7,9 +7,8 @@ Grid.prototype.cellsTaken = function(){
 }
 
 Grid.prototype.takeCell = function(cell){
-  var free = this.freeCell(cell)
-  switch(free){
-    case true:
+  switch(this.freeCell(cell)){
+    case 'taken':
       break;
     default:
       this.takenCells.push(cell)
@@ -17,6 +16,6 @@ Grid.prototype.takeCell = function(cell){
   }
 
 Grid.prototype.freeCell = function(cell){
-  for(var i; i < this.takenCells.length; i++){
-    return this.takenCells[i] === cell}
+  if (this.takenCells.indexOf(cell) > -1)
+  {return 'taken'}
 }
