@@ -2,9 +2,9 @@
 
 ## Implementation Notes
 I am writing a battle-ships browser game as a self motivated practice exercise.
-My particular goal is to improve my ability to remain object-oriented in javascript.
+My particular goal is to improve my ability to remain object-oriented in javascript, and to practice "tell, don't ask" as an OO value.
 As such this implementation focuses specifically on single responsibility,
-encapsulation and code that allows for short tests.
+encapsulation and manipulating control flow with commands, rather than queries. In addition, I am aiming for code that allows for short tests.
 
 As an exercise in discipline, all javascript code is test-driven (*no* spiking) and tested
 with Jasmine.
