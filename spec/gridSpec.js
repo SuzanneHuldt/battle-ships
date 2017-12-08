@@ -18,6 +18,6 @@ describe("Grid", function(){
       grid.takeCell('1,3')
       grid.takeCell('1,3')
       expect(grid.cellsTaken()).toEqual(1)
-    })
+    });
   });
 });
