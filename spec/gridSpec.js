@@ -20,4 +20,21 @@ describe("Grid", function(){
       expect(grid.cellsTaken()).toEqual(1)
     });
   });
+
+  describe("fire", function(){
+    it("returns hit or miss when cell fired upon", function(){
+      grid.takeCell('1,3')
+      expect(grid.fireOnCell('1,3')).toEqual('hit')
+    });
+    it("removes hit cell from taken cells", function(){
+      grid.takeCell('1,3')
+      grid.fireOnCell('1,3')
+      expect(grid.cellsTaken()).toEqual(0)
+    });
+    it("removes hit cell from taken cells but leaves missed cells", function(){
+      grid.takeCell('1,3')
+      grid.fireOnCell('1,2')
+      expect(grid.cellsTaken()).toEqual(1)
+  });
+});
 });

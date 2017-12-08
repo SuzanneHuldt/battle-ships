@@ -30,9 +30,9 @@ As a player
 So that I can have a coherent game
 I would like my ship to be constrained to be on the board
 
-As a player
+~As a player
 So that I can play the game
-I would like to be able to fire at the board and know whether it's a hit or a miss.
+I would like to be able to fire at the board and know whether it's a hit or a miss.~
 
 ~As a player
 So that I can refine my strategy
