@@ -1,7 +1,7 @@
 function Grid(){
   this.takenCells = []
 }
-// remember cypress tests for interface as well as unit tests!
+
 Grid.prototype.cellsTaken = function(){
   return this.takenCells.length
 }
