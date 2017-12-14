@@ -32,13 +32,14 @@ Boat.prototype.hitCell = function(cell){
 }
 
 Boat.prototype.legalPlacement = function(cell){
+  this.splitCell(cell)
+  var alpha = dimensions[0]
+  var num = dimensions[1]
 
 }
 
 Boat.prototype.splitCell = function(cell){
-  var dimensions = cell.split("")
-  var alpha = dimensions[0]
-  var num = dimensions[1]
+  return dimensions = cell.split(",")
 }
 
 Boat.prototype.chooseType = function(type){
