@@ -6,7 +6,7 @@ My particular goal is to improve my ability to remain object-oriented in javascr
 As such this implementation focuses specifically on single responsibility,
 encapsulation and manipulating control flow with commands, rather than queries. In addition, I am aiming for code that allows for short tests.
 
-As an exercise in discipline, all javascript code is test-driven (*no* spiking) and tested
+As an exercise in discipline, all javascript code is test-driven and tested
 with Jasmine.
 
 ## Part 1 - user stories
@@ -22,9 +22,9 @@ I would like to be able to see the current state of the game.
 So that I can prepare for the game
 I would like to be able to place a ship of size: [3] in my game.~
 
-~As a player
+As a player
 So that I can lay my ship out properly
-I would like to place a ship either horizontally or vertically.~
+I would like to place a ship either horizontally or vertically.
 
 As a player
 So that I can have a coherent game
