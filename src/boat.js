@@ -31,15 +31,7 @@ Boat.prototype.hitCell = function(cell){
   this.occupiedCells.splice(index, 1)
 }
 
-Boat.prototype.legalPlacement = function(cell){
-  this.splitCell(cell)
-  
 
-}
-
-Boat.prototype.splitCell = function(cell){
-  return dimensions = cell.split(",")
-}
 
 Boat.prototype.chooseType = function(type){
   switch(type) {
