@@ -2,6 +2,8 @@
 
 //const legalPlacement = require("./legalPlacement").legalPlacement;
 
+// figure out how to extract and expose all this properly without
+// breaking random shit 
 (function(exports){
   function legalPlacement(oldCell, newCell){
     splitCell(newCell)
@@ -44,6 +46,8 @@ Boat.prototype.getSize = function(size){
 
 
 Boat.prototype.placeBoat = function(cell){
+  // sort out order of cells free
+  // then clean all this shit up when it's passing
   if(this.getSize() >= 1){
   var oldCell = this.occupiedCells.pop()
   if(this.cellsFree() && legalPlacement(oldCell, cell)) {
