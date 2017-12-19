@@ -81,7 +81,7 @@ describe("Boat", function(){
     it("returns illegal placement for diagonal cell placement", function(){
       boat.chooseType('destroyer')
       boat.placeBoat('A,3')
-      expect(boat.legalPlacement('B,2')).toEqual(false)
+      expect(boat.placeBoat('B,2')).toEqual('error')
     });
   });
 
