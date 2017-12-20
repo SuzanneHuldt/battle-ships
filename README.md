@@ -20,7 +20,7 @@ I would like to be able to see the current state of the game.
 
 ~As a player
 So that I can prepare for the game
-I would like to be able to place a ship of size: [3] in my game.~
+I would like to be able to place a ship in my game and set its size.~
 
 As a player
 So that I can lay my ship out properly

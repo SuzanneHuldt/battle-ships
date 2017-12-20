@@ -30,6 +30,8 @@ describe("Boat", function(){
     });
   });
 
+
+
   describe("place boat", function(){
     it("adds the cells where the boat is placed into occupied cells", function(){
       boat.chooseType('destroyer')
@@ -40,7 +42,8 @@ describe("Boat", function(){
       boat.chooseType('destroyer')
       boat.placeBoat('A,3')
       boat.placeBoat('A,4')
-      expect(boat.placeBoat('A,5')).toEqual('error')
+      boat.placeBoat('A,5')
+      expect(boat.occupiedCells.length).toEqual(2)
     });
     it("does not place more cells than the size of the boat", function(){
       boat.chooseType('destroyer')
