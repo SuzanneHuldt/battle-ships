@@ -1,8 +1,143 @@
 
-.container {
+#carrier {
+  background-color: green;
+  color: white;
+  height: 40px;
+  width: 70px;
+}
+
+#submarine {
+  background-color: green;
+  color: white;
+  height: 40px;
+  width: 70px;
+}
+
+#battleship {
+  background-color: green;
+  color: white;
+  height: 40px;
+  width: 70px;
+}
+
+#destroyer {
+  background-color: green;
+  color: white;
+  height: 40px;
+  width: 70px;
+}
+
+#cruiser {
+  background-color: green;
+  color: white;
+  height: 40px;
+  width: 70px;
+}
+
+#grid{
   display: grid;
-  grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
-  grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  height: 200px;
+  width: 200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#item1{
+  background-color: blue;
+}
+
+#item2{
+  background-color: aqua;
+}
+
+#item3{
+  background-color: blue;
+}
+
+#item4{
+  background-color: aqua;
+}
+
+#item5{
+  background-color: blue;
+}
+
+#item6{
+  background-color: aqua;
+}
+
+#item7{
+  background-color: blue;
+}
+
+#item8{
+  background-color: aqua;
+}
+
+#item9{
+  background-color: blue;
+}
+
+#item10{
+  background-color: aqua;
+}
+
+#item11{
+  background-color: blue;
+}
+
+#item12{
+  background-color: aqua;
+}
+
+#item13{
+  background-color: blue;
+}
+
+#item14{
+  background-color: aqua;
+}
+
+#item15{
+  background-color: blue;
+}
+
+#item16{
+  background-color: aqua;
+}
+
+#item17{
+  background-color: blue;
+}
+
+#item18{
+  background-color: aqua;
+}
+
+#item19{
+  background-color: blue;
+}
+
+#item20{
+  background-color: aqua;
+}
+
+#item21{
+  background-color: blue;
+}
+
+#item22{
+  background-color: aqua;
+}
+
+#item23{
+  background-color: blue;
+}
+
+#item24{
+  background-color: aqua;
+}
+
+#item25{
+  background-color: blue;
 }

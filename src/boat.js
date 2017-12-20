@@ -1,32 +1,3 @@
-
-(function(exports){
-  function legalPlacement(oldCell, newCell){
-    splitCell(newCell)
-    var newNum = parseInt(dimensions[1])
-    var newLetter = dimensions[0]
-    var newLetter = newLetter.charCodeAt(0)
-
-    splitCell(oldCell)
-    var oldNum = parseInt(dimensions[1])
-    var oldLetter = dimensions[0]
-    var newLetter = oldLetter.charCodeAt(0)
-
-    var numDiff = oldNum - newNum
-    var letterDiff = oldLetter - newLetter
-
-    return ((numDiff + letterDiff) > 1)
-
-  }
-  exports.legalPlacement = legalPlacement;
-})(this);
-
-(function(exports){
-  function splitCell(cell){
-    return dimensions = cell.split(",")
-  }
-  exports.splitCell = splitCell;
-})(this);
-
 // get grid going to make placing code simpler
 
 function Boat(){
@@ -46,11 +17,16 @@ Boat.prototype.isSunk = function(){
     }
 }
 
-// refactor this so jquery sends size
+Boat.prototype.setDirection = function(direction){
+  this.direction = direction
+}
+
 
 Boat.prototype.setSize = function(size){
   this.size = size
 }
+
+//get rid of this eventually 
 Boat.prototype.chooseType = function(type){
   switch(type) {
     case 'submarine':
