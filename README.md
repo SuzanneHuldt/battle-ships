@@ -26,9 +26,9 @@ As a player
 So that I can lay my ship out properly
 I would like to place a ship either horizontally or vertically.
 
-As a player
+~As a player
 So that I can have a coherent game
-I would like my ship to be constrained to be on the board
+I would like my ship to be constrained to be on the board~
 
 ~As a player
 So that I can play the game

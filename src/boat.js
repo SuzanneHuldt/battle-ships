@@ -27,22 +27,18 @@
   exports.splitCell = splitCell;
 })(this);
 
+// get grid going to make placing code simpler
 
 function Boat(){
   this.hits = 0
   this.occupiedCells = []
 }
 
-Boat.prototype.getSize = function(size){
-  return this.size = size
-}
-
-Boat.prototype.placeBoat = function(cell){ 
+Boat.prototype.placeBoat = function(cell){
   if(this.cellsFree()){
     this.occupiedCells.push(cell)
   }
 }
-
 
 Boat.prototype.isSunk = function(){
     if(this.hits === this.size){
@@ -50,6 +46,11 @@ Boat.prototype.isSunk = function(){
     }
 }
 
+// refactor this so jquery sends size
+
+Boat.prototype.setSize = function(size){
+  this.size = size
+}
 Boat.prototype.chooseType = function(type){
   switch(type) {
     case 'submarine':
